@@ -22,7 +22,7 @@ puts [1,2,3].class #=> Array
 
 pigeon_data.reduce({}) do |memo,(prop,value)|
   puts "prop: #{prop},"
-  prop.reduce({}) do |memo, (inner_value, names)|
+  prop.reduce({}) do |inner_memo, (inner_value, names)|
     puts "value: #{inner_value}"
     puts "   names: #{names}"
   end

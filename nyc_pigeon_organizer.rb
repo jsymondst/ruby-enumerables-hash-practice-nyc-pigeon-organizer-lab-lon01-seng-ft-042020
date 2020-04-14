@@ -56,6 +56,7 @@ def nyc_pigeon_organizer(data)
       data[prop][value].each do |name|
         if !output.has_key?(name)
           output[key]={}
+        end
 
         output[name][prop] = value
       end

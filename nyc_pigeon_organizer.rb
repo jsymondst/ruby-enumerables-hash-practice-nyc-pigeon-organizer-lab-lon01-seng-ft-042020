@@ -42,6 +42,7 @@ puts [1,2,3].class #=> Array
 
 
 test = {}
+test[:name] = {}
 
 test[:name][:color] = "test"
 
@@ -53,6 +54,9 @@ def nyc_pigeon_organizer(data)
   data.each do |prop, values|
     data[prop].each do |value, names|
       data[prop][value].each do |name|
+        if !output.has_key?(name)
+          output[key]={}
+        
         output[name][prop] = value
       end
     end

@@ -34,7 +34,7 @@ end
 
 pigeon_data.each() do |prop|
   pigeon_data[prop].each do |value|
-    value.each do |name|
+    pigeon_data[prop][value].each do |name|
       puts "#{name}.#{prop}: #{value}"
     end
   end

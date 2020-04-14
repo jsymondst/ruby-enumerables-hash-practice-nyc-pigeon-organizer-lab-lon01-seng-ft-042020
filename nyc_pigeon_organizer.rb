@@ -66,3 +66,6 @@ def nyc_pigeon_organizer(data)
   end
   output
 end
+orgd_pigeons = nyc_pigeon_organizer(pigeon_data)
+
+puts orgd_pigeons

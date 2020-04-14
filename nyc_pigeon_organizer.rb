@@ -71,4 +71,4 @@ def nyc_pigeon_organizer(data)
 end
 orgd_pigeons = nyc_pigeon_organizer(pigeon_data)
 
-puts orgd_pigeons
+# puts orgd_pigeons

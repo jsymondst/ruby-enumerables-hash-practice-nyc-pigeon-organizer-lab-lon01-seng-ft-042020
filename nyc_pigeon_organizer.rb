@@ -41,15 +41,15 @@ puts [1,2,3].class #=> Array
 # end
 
 
-test = {}
-if !test.has_key?(:name)
-test[:name] = {}
-end
-
-test[:name][:color] = []
-test[:name][:color].push "hi"
-
-puts test
+# test = {}
+# if !test.has_key?(:name)
+# test[:name] = {}
+# end
+#
+# test[:name][:color] = []
+# test[:name][:color].push "hi"
+#
+# puts test
 
 
 def nyc_pigeon_organizer(data)

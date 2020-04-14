@@ -17,11 +17,17 @@ pigeon_data = {
   }
 }
 
-puts pigeon_data.class
-puts [1,2,3].class
+puts pigeon_data.class #=> Hash
+puts [1,2,3].class #=> Array
+
+pigeon_data.reduce({}) do |memo,(key,value)|
+  puts "memo#{memo}, key: #{key}, value:#{value}"
+end
 
 def nyc_pigeon_organizer(data)
-  # write your code here!
-
+  output = {}
+  # data.reduce({}) do |memo,(key,value)|
+  #   puts "memo#{memo}, key: #{key}, value:#{value}"
+  # end
 
 end

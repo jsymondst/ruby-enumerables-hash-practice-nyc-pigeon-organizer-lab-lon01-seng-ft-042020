@@ -32,6 +32,12 @@ pigeon_data.each() do |prop, values|
   end
 end
 
+pigeon_data.each() do |prop|
+  prop.each.do |value|
+    value.each do |name|
+      puts "#{name}.#{prop} = #{value}"
+
+
 def nyc_pigeon_organizer(data)
   output = {}
   # data.reduce({}) do |memo,(key,value)|

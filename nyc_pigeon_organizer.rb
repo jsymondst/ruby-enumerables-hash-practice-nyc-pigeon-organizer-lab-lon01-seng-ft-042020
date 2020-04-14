@@ -43,11 +43,10 @@ puts [1,2,3].class #=> Array
 
 test = {}
 if !test.has_key?(:name)
-puts "do it!"
 test[:name] = {}
 end
 
-test[:name][:color] = "test"
+test[:name][:color].push "hi"
 
 puts test
 
@@ -60,7 +59,10 @@ def nyc_pigeon_organizer(data)
         if !output.has_key?(name)
           output[name]={}
         end
-        output[name][prop] = value
+        if !output[name].has_key?(prop)
+          output[name][prop] =[]
+        end
+        output[name][prop].push(value)
       end
     end
   end

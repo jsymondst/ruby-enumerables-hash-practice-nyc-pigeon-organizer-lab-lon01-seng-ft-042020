@@ -63,7 +63,7 @@ def nyc_pigeon_organizer(data)
         if !output[name].has_key?(prop)
           output[name][prop] =[]
         end
-        output[name][prop].push(value)
+        output[name][prop].push(value.to_s)
       end
     end
   end

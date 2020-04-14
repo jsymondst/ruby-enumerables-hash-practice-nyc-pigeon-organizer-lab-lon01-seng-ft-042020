@@ -18,6 +18,7 @@ pigeon_data = {
 }
 
 puts pigeon_data.class
+puts [1,2,3].class
 
 def nyc_pigeon_organizer(data)
   # write your code here!

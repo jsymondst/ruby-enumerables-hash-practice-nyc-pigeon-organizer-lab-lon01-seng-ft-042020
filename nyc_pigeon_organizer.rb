@@ -20,7 +20,7 @@ pigeon_data = {
 puts pigeon_data.class #=> Hash
 puts [1,2,3].class #=> Array
 
-pigeon_data.reduce() do |memo,(prop,value)|
+pigeon_data.reduce({}) do |memo,(prop,value)|
   puts "prop: #{prop}, value:#{value}"
 end
 

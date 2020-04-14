@@ -42,7 +42,10 @@ puts [1,2,3].class #=> Array
 
 
 test = {}
+if !test.has_key(:name)
+puts "do it!"
 test[:name] = {}
+end
 
 test[:name][:color] = "test"
 

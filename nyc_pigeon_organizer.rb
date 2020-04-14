@@ -17,7 +17,7 @@ pigeon_data = {
   }
 }
 
-puts pigeon_data.is_a
+puts pigeon_data.type
 
 def nyc_pigeon_organizer(data)
   # write your code here!

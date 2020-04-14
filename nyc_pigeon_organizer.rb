@@ -35,7 +35,7 @@ end
 pigeon_data.each() do |prop|
   prop.each.do |value|
     value.each do |name|
-      puts "#{name}.#{prop} = #{value}"
+      puts "#{name}.#{prop}: #{value}"
 
 
 def nyc_pigeon_organizer(data)

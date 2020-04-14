@@ -28,6 +28,7 @@ pigeon_data.each() do |prop, values|
     puts "      names: #{names}"
     pigeon_data[prop][value].each do |name|
       puts "#{name}.#{prop} = #{value}"
+    end
   end
 end
 

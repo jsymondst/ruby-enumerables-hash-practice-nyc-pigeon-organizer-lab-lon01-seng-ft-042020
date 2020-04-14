@@ -20,7 +20,7 @@ pigeon_data = {
 puts pigeon_data.class #=> Hash
 puts [1,2,3].class #=> Array
 
-pigeon_data.each() do |prop, values|
+pigeon_data.each do |prop, values|
   puts "prop: #{prop},"
   puts "  values: #{values}"
   pigeon_data[prop].each() do |value, names|

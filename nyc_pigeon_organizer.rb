@@ -22,7 +22,7 @@ puts [1,2,3].class #=> Array
 
 pigeon_data.each() do |prop|
   puts "prop: #{prop},"
-  prop.each({}) do |value|
+  prop.each() do |value|
     puts "value: #{value}"
     # puts "   names: #{names}"
   end

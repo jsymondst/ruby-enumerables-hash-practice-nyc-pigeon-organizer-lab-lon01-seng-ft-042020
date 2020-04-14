@@ -20,32 +20,42 @@ pigeon_data = {
 puts pigeon_data.class #=> Hash
 puts [1,2,3].class #=> Array
 
-pigeon_data.each do |prop, values|
-  puts "prop: #{prop},"
-  puts "  values: #{values}"
-  pigeon_data[prop].each() do |value, names|
-    puts "    value: #{value}"
-    puts "      names: #{names}"
-    pigeon_data[prop][value].each do |name|
-      puts "#{name}.#{prop} = #{value}"
-    end
-  end
-end
+# pigeon_data.each do |prop, values|
+#   puts "prop: #{prop},"
+#   puts "  values: #{values}"
+#   pigeon_data[prop].each() do |value, names|
+#     puts "    value: #{value}"
+#     puts "      names: #{names}"
+#     pigeon_data[prop][value].each do |name|
+#       puts "#{name}.#{prop} = #{value}"
+#     end
+#   end
+# end
 
-pigeon_data.each do |prop, values|
-  pigeon_data[prop].each do |value, names|
-    pigeon_data[prop][value].each do |name|
-      puts "#{name}.#{prop}: #{value}"
-    end
-  end
-end
+# pigeon_data.each do |prop, values|
+#   pigeon_data[prop].each do |value, names|
+#     pigeon_data[prop][value].each do |name|
+#       puts "#{name}.#{prop}: #{value}"
+#     end
+#   end
+# end
 
+
+test = {}
+
+test[:name][:color] = "test"
+
+puts test
 
 
 def nyc_pigeon_organizer(data)
   output = {}
-  # data.reduce({}) do |memo,(key,value)|
-  #   puts "memo#{memo}, key: #{key}, value:#{value}"
-  # end
+  data.each do |prop, values|
+    data[prop].each do |value, names|
+      data[prop][value].each do |name|
+        output[name][prop] = value
+      end
+    end
+  end
 
 end

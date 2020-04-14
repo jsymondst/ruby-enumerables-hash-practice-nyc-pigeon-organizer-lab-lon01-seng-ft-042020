@@ -46,6 +46,7 @@ if !test.has_key?(:name)
 test[:name] = {}
 end
 
+test[:name][:color] = []
 test[:name][:color].push "hi"
 
 puts test

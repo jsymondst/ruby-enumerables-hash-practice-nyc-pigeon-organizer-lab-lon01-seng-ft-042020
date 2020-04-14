@@ -21,7 +21,11 @@ puts pigeon_data.class #=> Hash
 puts [1,2,3].class #=> Array
 
 pigeon_data.reduce({}) do |memo,(prop,value)|
-  puts "prop: #{prop}, value:#{value}"
+  puts "prop: #{prop},"
+  prop.reduce({}) do |memo, (value, names)|
+    puts "value: #{value}"
+    puts "   names: #{names}"
+  end
 end
 
 def nyc_pigeon_organizer(data)
